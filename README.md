@@ -2,16 +2,14 @@
 
 
 ```python
-
-from database import Db
-
+>>> from database import Db
 >>> my_db = Db()
 >>> my_db.insert({'hello': 'boy'})
 >>> my_db.update({'hello': 'boy'}, {'hello': 'goodbye'})
-{'hello', 'goodbye'}
+[{'hello': 'goodbye'}]
 >>> my_db.find({})
-{'hello', 'goodbye'}
-
+[{'hello': 'goodbye'}]
+>>> 
 ```
 
 # Launch the Tests
